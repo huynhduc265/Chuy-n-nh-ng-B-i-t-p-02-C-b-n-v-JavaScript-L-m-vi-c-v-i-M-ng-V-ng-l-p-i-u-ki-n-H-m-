@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot</title>
+</head>
+<script>
+    var s, n;
+
+    s = prompt("Hãy nhập số phần tử mảng: ");
+
+    n = new Array();
+    if(s<15){
+        alert("error");
+    }
+    else{
+        for(i = 0; i<s; i++){
+            n[i] = prompt("Phần tử " + i + " là: ");
+        }
+        document.write("Mảng A gồm " + s + " phần tử là: ");
+        document.write(n + "<br/>");
+        
+        for(z= 0; z< s; z++){
+            f = n[z];
+
+            fF = parseInt(f);
+            if(f % 5 == 0){
+                document.write(f + " chia hết cho 5 <br/>");
+            }
+            else{
+                document.write(f + " không chia hết cho 5 <br/>");
+            }
+        }
+    }
+</script>
+<body>
+    
+</body>
+</html>
